@@ -317,14 +317,14 @@ section{
 
 /*About Section*/
 
-.about-section .about-content{
+.about .about-content{
     
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about-section .about-content .about-text{
+.about .about-content .about-text{
     
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -332,7 +332,7 @@ section{
 
 }
 
-.about-section .about-content .about-text h3{
+.about .about-content .about-text h3{
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 600;
@@ -340,13 +340,13 @@ section{
 
 }
 
-.about-section .about-content .about-text p{
+.about .about-content .about-text p{
     font-size: 16px;
     line-height: 25px;
     color: #504e70;
 }
 
-.about-section .about-content .personal-info{
+.about .about-content .personal-info{
     
     -ms-flex: 0 0 60%;
     flex: 0 0 60%;
@@ -355,7 +355,7 @@ section{
 }
 
 
-.about-section .about-content .personal-info .info-items{
+.about .about-content .personal-info .info-items{
     
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -364,7 +364,7 @@ section{
 
 
 
-.about-section .about-content .personal-info .info-items p{
+.about .about-content .personal-info .info-items p{
     
     font-weight: 600;
     padding: 10px 0;
@@ -373,29 +373,29 @@ section{
     border-bottom: 1px solid #e8dfec;
 }
 
-.about-section .about-content .personal-info .info-items p span{
+.about .about-content .personal-info .info-items p span{
     font-weight: 400;
     color: #504e70;
     margin-left: 4px;
     display: inline-block;
 }
 
-.about-section .about-content .personal-info .buttons{
+.about .about-content .personal-info .buttons{
     margin-top: 30px;
 }
 
-.about-section .about-content .personal-info .buttons .btn{
+.about .about-content .personal-info .buttons .btn{
     margin-right: 15px;
 }
 
-.about-section .about-content .skills{
+.about .about-content .skills{
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
 }
 
-.about-section .about-content .skills .skill-item{
+.about .about-content .skills .skill-item{
 
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -403,7 +403,7 @@ section{
 
 }
 
-.about-section .about-content .skills .skill-item h5{
+.about .about-content .skills .skill-item h5{
 
     line-height: 40px;
     font-weight: 600;
@@ -413,7 +413,7 @@ section{
     margin: 0;
 }
 
-.about-section .about-content .skills .skill-item .progress{
+.about .about-content .skills .skill-item .progress{
     background-color: #e3e3e3;
     height: 8px;
     border-radius: 4px;
@@ -422,11 +422,11 @@ section{
     position: relative;
 }
 
-.about-section .about-content .skills .skill-item{
+.about .about-content .skills .skill-item{
     margin-bottom: 30px;
 }
 
-.about-section .about-content .skills .skill-item .progress .progress-in{
+.about .about-content .skills .skill-item .progress .progress-in{
     position: absolute;
     left: 0;
     top: 0;
@@ -434,7 +434,7 @@ section{
     border-radius: 4px;
 }
 
-.about-section .about-content .skills .skill-item .skill-percent{
+.about .about-content .skills .skill-item .skill-percent{
     line-height: 40px;
     position: absolute;
     right: 0;
@@ -443,33 +443,33 @@ section{
     font-weight: 400;
 }
 
-.about-section .about-content .education{
+.about .about-content .education{
     
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.about-section .about-content .experience{
+.about .about-content .experience{
     
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.about-section .about-content h3.tittle{
+.about .about-content h3.tittle{
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
     color: #302e4d;
 }
 
-.about-section .about-content .timeline-box{
+.about .about-content .timeline-box{
     -ms-flex:   0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about-section .about-content .timeline{
+.about .about-content .timeline{
     background-color: #fdf9ff;
     padding: 30px 15px;
     border: 1px solid #d4d4e3;
@@ -477,17 +477,17 @@ section{
     width: 100%;
     position: relative;
 }
-.about-section .about-content .timeline .timeline-item{
+.about .about-content .timeline .timeline-item{
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
 
-.about-section .about-content .timeline .timeline-item:last-child{
+.about .about-content .timeline .timeline-item:last-child{
     padding-bottom: 0;
 }
 
-.about-section .about-content .timeline .timeline-item::before{
+.about .about-content .timeline .timeline-item::before{
     content: '';
     width: 1px;
     position: absolute;
@@ -495,7 +495,7 @@ section{
     left: 7;
     top: 0;
 }
-.about-section .about-content .timeline .circle-dot{
+.about .about-content .timeline .circle-dot{
     position: absolute;
     left: 0;
     top: 0;
@@ -505,7 +505,7 @@ section{
     border-radius: 50%;
 }
 
-.about-section .about-content .timeline .timeline-date{
+.about .about-content .timeline .timeline-date{
     
     font-size: 14px;
     font-weight: 400;
@@ -514,23 +514,78 @@ section{
     color: #504e70;
 
 }
-.about-section .about-content .timeline .timeline-date .fa{
+.about .about-content .timeline .timeline-date .fa{
     margin-right:   12px;
     margin-bottom: 15px;
 
 }
 
-.about-section .about-content .timeline .timeline-tittle{
+.about .about-content .timeline .timeline-tittle{
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: capitalize;
     color: #302e4d;
 }
-.about-section .about-content .timeline .timeline-text{
+.about .about-content .timeline .timeline-text{
     font-size: 16px;
     line-height: 25px;
     color: #504e70;
     margin: 0;
     padding-bottom: 50px;
+}
+
+/*Service Section*/
+
+
+.service .container{
+    padding-bottom: 40px;
+}
+.service .service-item{
+
+
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.service .service-item .service-item-inner{
+    background-color: #fdf9ff;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    
+    
+}
+
+.service .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.service .service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+
+    display: block;
+    margin:0 auto 30px;
+    
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #302e4d;
+    font-weight: 700;
+    
+}
+
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    color: #504e70;
+    line-height: 25px;
 }
