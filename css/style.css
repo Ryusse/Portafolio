@@ -547,6 +547,8 @@ section{
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .service .service-item .service-item-inner{
@@ -555,26 +557,42 @@ section{
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
-    
-    
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;    
 }
 
-.service .service-item .service-item-inner .icon .fa{
-    font-size: 40px;
-    line-height: 60px;
+.service .service-item .service-item-inner:hover{
+    -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
+
+
 
 .service .service-item .service-item-inner .icon{
     height: 60px;
     width: 60px;
-
     display: block;
     margin:0 auto 30px;
-    
     text-align: center;
     border-radius: 50%;
+    -webkit-transform: all 0.5s ease;
+    transition: all 0.5s ease;
 
 }
+.service .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.service .service-item .service-item-inner:hover .icon .fa{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
 
 .service .service-item .service-item-inner h4{
     font-size: 18px;
@@ -588,4 +606,5 @@ section{
     font-size: 16px;
     color: #504e70;
     line-height: 25px;
+    margin: 0;
 }
