@@ -3,6 +3,7 @@
 
 const filterContainer= document.querySelector(".portfolio-filter"),
       filterBtns=filterContainer.children,
+
       totalFilterBtn=filterBtns.length,
       portfolioItems=document.querySelectorAll(".portfolio-item"),
       totalPorfolioItem=portfolioItems.length;
@@ -37,6 +38,7 @@ const filterContainer= document.querySelector(".portfolio-filter"),
 
     const lightbox=document.querySelector(".lightbox"),
           lightboxImg=lightbox.querySelector(".lightbox-img"),
+          lightboxClose = lightbox.querySelector(".lightbox-close"),
           lightboxText=lightbox.querySelector(".caption-text"),
           lightboxCounter=lightbox.querySelector(".caption-counter");
     
@@ -50,6 +52,24 @@ const filterContainer= document.querySelector(".portfolio-filter"),
         })
     }
 
+    function nextItem(){
+        if(itemIndex==totalPorfolioItem-1){
+            itemIndex=0;
+        }else{
+            itemIndex++;
+        }
+        changeItem();
+        
+    }
+    function prevItem(){
+        if(itemIndex===0){
+            itemIndex=totalPorfolioItem-1
+        }else{
+            itemIndex--;
+        }
+        changeItem();
+        
+    }
     function toggleLightbox(){
         lightbox.classList.toggle("open");
     }
@@ -59,6 +79,14 @@ const filterContainer= document.querySelector(".portfolio-filter"),
     
         lightboxImg.src=imgSrc;
         lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("h4").innerHTML;
-        lightboxCounter.innerHTML= (itemIndex+1) + "of" + totalPorfolioItem;
+        lightboxCounter.innerHTML= (itemIndex+1) + " of " + totalPorfolioItem;
 
     }
+
+    //close Lightbox
+
+   light.box.addEventListener("click",function(event){
+       if(event.target === lightboxClose|| event.target === lightbox){
+           toggleLightbox();
+       }
+   })

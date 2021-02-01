@@ -787,7 +787,7 @@ section{
     padding: 30px;
 }
 
-.lightbox .open{
+.lightbox.open{
     display: -ms-flexbox;
     display: flex;
 }
@@ -796,8 +796,10 @@ section{
     height: auto;
     width: auto;
     max-width: 100%;
-    max-height: 450px;
+    max-height: 480px;
     cursor: pointer;
+    display: block;
+    padding: 40px 0 30px;
 }
 .lightbox .lightbox-content {
     position: relative;   
@@ -840,7 +842,7 @@ section{
     height: 40px;
     width: 40px;
 
-    top: -40px;
+    top: 0;
     right: 0px;
     font-size: 32px;
     text-align: right;
@@ -851,7 +853,7 @@ section{
 
 .lightbox .lightbox-content .lightbox-caption {
     position: absolute;
-    bottom: -20px;
+    bottom: -5px;
     left : 0;
     width: 100%;
     
@@ -862,8 +864,10 @@ section{
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
+    z-index: -1;
 
 }
+
 
 .lightbox .lightbox-controls .prev-item,
 .lightbox .lightbox-controls .next-item{
@@ -883,11 +887,19 @@ section{
 
 }
 
-.lightbox .lightbox-controls .prev-item:active,
-.lightbox .lightbox-controls .next-item:active{
+
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover{
 
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active{
+
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .lightbox .lightbox-controls .prev-item{
