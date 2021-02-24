@@ -9,16 +9,31 @@
     <link rel="stylesheet" href="/css/skins/pink.css">
 
     <title>Portafolio web</title>
+
+    <!--Live Style Switcher-->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="/css/skins/pink.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="/css/skins/blue.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="/css/skins/green.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="/css/skins/orange.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="/css/skins/yellow.css" disabled>
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
 </head>
 <body>
 
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="loader">
+            
+        </div>
+    </div>
+    <!--Preloader-->
     <!--Main Container-->
     <div class="main-container">
         <!--Aside-->
         <div class="aside">
             <!--Logo-->
             <div class="logo">
-                <a href="#">The Cat</a>
+                <a href="#">Joel</a>
             </div>
             <!--Nav toogler btn-->
             <div class="nav-toggle">
@@ -26,30 +41,29 @@
             </div>
             <!--Nav-->
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i>Blog</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
             <!--Copyright-->
             <div class="copyright-text">
-                &copy; 2021 Puto el que lo lea
+                &copy; 
             </div>
         </div>
 
         <!--Main Content-->
         <div class="main-content">
             <!--Home Section-->
-            <section class="home">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="images/about.jpg" alt="profile" class="shadow-dark">
                         <h1>Joel Angel</h1>
                         <p>I'm a Web Developer</p>
                         <div class="social-links">
-                            <a href="https://www.instagram.com/ryuse.99/?hl=es-la" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="# " target="_blank"><i class="fa fa-linkedin"></i></a>
                             <a href="#" target="_blank"><i class="fa fa-github"></i></a>
                         </div>
@@ -59,7 +73,7 @@
             <!-- Home section- end-->
 
             <!--About section-->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-tittle padd-15">
@@ -115,7 +129,7 @@
                                     <div class="row">
                                         <div class="buttons padd-15">
                                             <a href="#" class="btn">Download CV</a>
-                                            <a href="#" class="btn">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
 
@@ -274,7 +288,7 @@
 
              <!--Servive Section-->
 
-             <section class="service section">
+             <section class="service section" id="services">
                  <div class="container">
                      <div class="row">
 
@@ -331,7 +345,7 @@
 
              <!--Portfolio Section-->
 
-             <section class="portfolio section">
+             <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-tittle padd-15">
@@ -462,21 +476,99 @@
 
                             </div>
                         </div>
-                        <!--Portfolio Item End-->
-                        
+                        <!--Portfolio Item End--> 
                     </div>
-
                 </div>
             </section>
-
              <!--Portfolio Section End-->
+
+             <!--Contact Section-->
+
+             <section class="contact section" id="contact">
+                 <div class="container">
+                     <div class="row">
+                         <div class="section-tittle padd-15">
+                             <h2>Contact Me</h2>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <!--Contact-info-item-->
+                         <div class="contact-info-item padd-15">
+                             <div class="icon"><i class="fa fa-phone"></i></div>
+                             <h4>Call Us On</h4>
+                             <p>91 8800 800 000</p>
+                         </div>
+                         <!--Contact-info-item End-->
+
+                         <!--Contact-info-item-->
+                         <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa  fa-map-marker"></i></div>
+                            <h4>Office</h4>
+                            <p>44 street. New Delhi , India</p>
+                        </div>
+                        <!--Contact-info-item End-->
+
+                        <!--Contact-info-item-->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>info@gmail.com</p>
+                        </div>
+                        <!--Contact-info-item End-->
+                     </div>
+                     <!--Contact Form-->
+                     <div class="row">
+                         <form class="contact-form padd-15">
+                             <div class="row">
+                                 <div class="form-item col-6 padd-15">
+                                     <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name*">
+                                     </div>         
+                                 </div>
+
+                                 <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" placeholder="Email*">
+                                    </div>         
+                                </div>
+                             </div>
+
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" placeholder="Subject*">
+                                    </div>         
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                       <textarea  class="form-control" placeholder="Message*"></textarea>
+                                    </div>         
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                       <button type="submit" class="btn">Send Message</button>
+                                    </div>         
+                                </div>
+                            </div>
+
+                         </form>
+                     </div>
+                     <!--Contact Form End-->
+                 </div>
+             </section>
+              <!--Contact Section End-->
         </div>
-        
+             <!--Main Content End-->
     </div>
 
-     <!--Main Content End-->
-
-
+    <!--Main Container End-->
 
         <!--Lightbox-->
         <div class="lightbox ">
@@ -497,9 +589,39 @@
         <!--Lightbox End-->
         
   
+        <!--Live Style Switcher-->
+
+        <div class="style-switcher">
+            <div class="toggle-style-switcher">
+                <i class="fa fa-cog fa-spin"></i>
+            </div>
+            <h4>Style Switcher</h4>
+            <ul>
+                <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839" onclick="setActiveStyle('pink')"></a></li>
+                <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3" onclick="setActiveStyle('blue')"></a></li>
+                <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+                <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400" onclick="setActiveStyle('yellow')"></a></li>
+                <li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick="setActiveStyle('green')"></a></li>
+            </ul>
+
+            <h5>Body Skins</h5>
+            <label for="">
+                <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+                Ligth
+            </label>
+            <label for="">
+                <input type="radio" class="body-skin" name="body-style" value="dark">
+                Dark
+            </label>
+        </div>
+
+         <!--Live Style Switcher End-->
 
     <!--Template js-->
     <script src="js/script.js"></script>
+
+    <!--Live style js-->
+    <script src="js/styleSwitcher.js"></script>
 
 </body>
 </html>

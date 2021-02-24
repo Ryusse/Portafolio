@@ -1,5 +1,3 @@
-
-
 .contact .contact-info-item .icon .fa,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
 .portfolio .portfolio-filter button.active,
@@ -9,7 +7,7 @@ body.dark .aside .nav li a:hover,
 .aside .nav li a:hover,
 body.dark .aside .nav li a.active,
 .aside .nav li a.active{
-    color: #ec1839;
+    color: #fa5b0f;
 }
 
 .service .service-item .service-item-inner:hover .icon,
@@ -23,10 +21,9 @@ body.dark .aside .nav li a.active,
 .aside .nav-toggle span::before,
 .aside .nav-toggle span::after,
 .home .intro .social-links a{
-    background-color: #ec1839;
+    background-color: #fa5b0f;
 }
-
 body.dark .portfolio .portfolio-filter button.active,
 .portfolio .portfolio-filter button.active{
-    border-color: #ec1839;
+    border-color: #fa5b0f;
 }
